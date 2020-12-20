@@ -11,7 +11,7 @@ color a
 @echo ---:===================D-------------------
 @echo -------------------------------------------
 set version= 1.2
-
+cd C:\Users\%username%\ToroMax\
 setlocal enabledelayedexpansion
 set SEPARATOR=/
 set filecontent=
@@ -32,7 +32,8 @@ start ToroMaxActualizador.bat
 exit
 
 :oka
-set /p ejecutar=Que es lo que quieres hacer? 1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote : 
+@echo Que quieres hacer?
+set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto, 5= Direcciones IP de clase: 
 
  if %ejecutar%==1 (goto ai) else (goto aj)
 
@@ -93,3 +94,30 @@ set /p ejecutar=Que es lo que quieres hacer? 1 = Shutdown, 2 = Mensaje/s, 3= CMD
       @echo Si no ha ocurrido nada significa que no tienes permiso para entrar hay.
       pause
       goto inicio
+
+:cj
+ if %ejecutar%==4 (goto di) else (goto dj)
+
+:di
+cls
+color B
+set /p direccion4= Escribe la direccion del ordenador al que te quieres conectar: 
+mstsc /v:%direccion4% /admin
+goto inicio
+
+:dj
+ if %ejecutar%==5 (goto ei) else (goto ej)
+
+:ei
+cls
+color B
+@echo Aqui tienes las direcciones IP de clase.
+tiemout /t 4
+cd C:\Users\%username%\ToroMax\
+curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/IPs.txt
+timeout /t 2
+start IPs.txt
+timeout /t 1
+del IPs.txt
+goto inicio
+
