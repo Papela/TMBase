@@ -27,8 +27,8 @@ if %version%==%filecontent% (goto oka) else (goto actudisp)
 @echo Actualizacion Disponible!!
 @echo La actualizacion empezara en 3,2...
 timeout /t 4 /NOBREAK
-curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxInstalador.bat
-start ToroMaxInstalador.bat
+curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxActualizador.bat
+start ToroMaxActualizador.bat
 exit
 
 :oka
