@@ -1,0 +1,8 @@
+IP Lihue: 10.18.50.110
+IP Vasyl: 10.18.48.213
+IP Markos: 10.18.48.152
+IP Nagore: 10.18.48/50.123
+IP Unai: 10.18.50.112
+
+
+//IPs actualizadas: 18/12/2020
