@@ -5,6 +5,7 @@ curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxVersio
 timeout /t 2
 
 :inicio
+title ToroMax V1.2
 cls
 color a
 @echo -------------------------------------------
@@ -119,5 +120,27 @@ timeout /t 2
 start IPs.txt
 timeout /t 1
 del IPs.txt
+goto inicio
+
+:ej
+if %ejecutar%==1015 (goto aaa) else (goto aaj)
+
+:aaa
+title ToroMax V1.2 -- Admin Panel
+color F4
+cls
+@echo Estas a punto de entrar en el panel de administrador.
+set /p adminpass= Escribe la contrasena del administrador: 
+cls
+color c
+@echo Contrasena incorrecta :c
+timeout /t 4
+goto inicio
+
+:aaj
+cls
+color c
+@echo Comando incorrecto. :c
+timeout /t 4
 goto inicio
 
