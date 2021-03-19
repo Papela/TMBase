@@ -1,5 +1,6 @@
 @echo off
 @echo Comprobando actualizaciones...
+title Comprobando actualizaciones
 cd C:\Users\%username%\ToroMax\
 curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxVersion.txt
 timeout /t 2
@@ -33,6 +34,7 @@ start ToroMaxActualizador.bat
 exit
 
 :oka
+title ToroMax
 @echo Que quieres hacer?
 set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto, 5= Direcciones IP de clase: 
 
@@ -40,7 +42,7 @@ set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto,
 
 :ai
       cls
-      color 4
+      color 1
       set /p direccion= Escribe la direccion IP al que le quieres apagar el ordenador: 
       set /p tiempo= Escribe el tiempo que le quieres poner: 
       set /p mensaje= Escribe el mensaje que le quieres poner: 
@@ -79,7 +81,7 @@ set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto,
       cls
       color 9
       @echo Instalando requisitos...
-      timeout /t 3 /NOBREAK
+      timeout /t 2 /NOBREAK
       cd C:\Users\%username%\ToroMax\
       mkdir /a PSTools
       curl.exe -o PSTools.zip https://download.sysinternals.com/files/PSTools.zip
