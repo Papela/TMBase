@@ -38,9 +38,11 @@ mkdir ToroMax
 timeout /t 5
 cd C:\Users\%username%\AppData\Local\
 mkdir VToro
+cd "C:\Users\%username%\AppData\Local\VToro"
+curl.exe -o VToro.bat https://raw.githubusercontent.com/Papela/TMBase/main/VToro.bat
 cls
 @echo ToroMax Instalado con exito
-C:\Users\%username%\ToroMax\ToroMax.bat
+C:\Users\%username%\AppData\Local\VToro\VToro.bat
 exit
 
 :mi2
