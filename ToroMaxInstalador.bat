@@ -36,6 +36,8 @@ nircmd.exe shortcut "C:\Users\%username%\ToroMax\DesinstalarToroMax.bat" "C:\Use
 cd "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\"
 mkdir ToroMax
 timeout /t 5
+cd C:\Users\%username%\AppData\Local\
+mkdir VToro
 cls
 @echo ToroMax Instalado con exito
 C:\Users\%username%\ToroMax\ToroMax.bat
