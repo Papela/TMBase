@@ -87,7 +87,7 @@ set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto,
       curl.exe -o PSTools.zip https://download.sysinternals.com/files/PSTools.zip
       timeout /t 2
       start PowerShell Expand-Archive "C:\Users\%username%\ToroMax\PSTools.zip" C:\Users\%username%\ToroMax\PSTools
-      timeout /t 3
+      timeout /t 4
       cls
       del "C:\Users\%username%\ToroMax\PSTools.zip"
       cd PSTools
