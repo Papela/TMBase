@@ -6,13 +6,13 @@ curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxVersio
 timeout /t 2
 
 :inicio
-title ToroMax V1.22
+title ToroMax V1.24
 cls
 color a
 @echo -------------------------------------------
 @echo ---:===================D-------------------
 @echo -------------------------------------------
-set version= 1.22
+set version= 1.24
 cd C:\Users\%username%\ToroMax\
 setlocal enabledelayedexpansion
 set SEPARATOR=/
@@ -115,12 +115,12 @@ goto inicio
 cls
 color B
 @echo Aqui tienes las direcciones IP de clase.
-tiemout /t 4
+timeout /t 3
 cd C:\Users\%username%\ToroMax\
-curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/IPs.txt
-timeout /t 2
+curl.exe -LJO http://amaguadalupekoa.eu5.org/01/IPs.txt
+timeout /t 3
 start IPs.txt
-timeout /t 1
+timeout /t 2
 del IPs.txt
 goto inicio
 
@@ -128,7 +128,7 @@ goto inicio
 if %ejecutar%==1015 (goto aaa) else (goto aaj)
 
 :aaa
-title ToroMax V1.22 -- Admin Panel
+title ToroMax V1.24 -- Admin Panel
 color F4
 cls
 @echo Estas a punto de entrar en el panel de administrador.
@@ -145,4 +145,3 @@ color c
 @echo Comando incorrecto. :c
 timeout /t 4
 goto inicio
-
