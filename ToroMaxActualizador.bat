@@ -11,8 +11,9 @@ cls
 @echo ToroMax actualizado con exito
 timeout /t 3
 cls
-@echo Escribe la contrasena de tu usuario: 
+@echo Escribe la pass de tu usuario de Windows actual: 
 runas /user:%username% /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
 timeout /t 3 /NOBREAK
-C:\Users\%username%\ToroMax\ToroMax.bat
+cls
+start C:\Users\%username%\ToroMax\ToroMax.bat
 exit
