@@ -11,8 +11,8 @@ cls
 @echo ToroMax actualizado con exito
 timeout /t 3
 cls
-@echo Escribe la contraseña de tu usuario: 
-runas /user:Administrator /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
+@echo Escribe la contrasena de tu usuario: 
+runas /user:%username% /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
 timeout /t 3 /NOBREAK
 C:\Users\%username%\ToroMax\ToroMax.bat
 exit
