@@ -9,5 +9,8 @@ curl.exe -o VToro.bat https://raw.githubusercontent.com/Papela/TMBase/main/VToro
 timeout /t 3
 cls
 @echo ToroMax actualizado con exito
+timeout /t 3
+cls
+@echo Escribe la contraseña de tu usuario: 
 runas /user:Administrator /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
 exit
