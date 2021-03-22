@@ -13,4 +13,6 @@ timeout /t 3
 cls
 @echo Escribe la contraseña de tu usuario: 
 runas /user:Administrator /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
+timeout /t 3 /NOBREAK
+C:\Users\%username%\ToroMax\ToroMax.bat
 exit
