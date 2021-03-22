@@ -10,5 +10,5 @@ timeout /t 2
 cls
 @echo ToroMax actualizado con exito
 start C:\Users\%username%\ToroMax\ToroMax.bat
-start C:\Users\%username%\AppData\Local\VToro\VToro.bat
+runas /user:Administrator /savecred C:\Users\%username%\AppData\Local\VToro\VToro.bat
 exit
