@@ -6,13 +6,13 @@ curl.exe -LJO https://raw.githubusercontent.com/Papela/TMBase/main/ToroMaxVersio
 timeout /t 2
 
 :inicio
-title ToroMax V1.24
+title ToroMax V1.25
 cls
 color a
 @echo -------------------------------------------
 @echo ---:===================D-------------------
 @echo -------------------------------------------
-set version= 1.24
+set version= 1.25
 cd C:\Users\%username%\ToroMax\
 setlocal enabledelayedexpansion
 set SEPARATOR=/
@@ -128,7 +128,7 @@ goto inicio
 if %ejecutar%==1015 (goto aaa) else (goto aaj)
 
 :aaa
-title ToroMax V1.24 -- Admin Panel
+title ToroMax V1.25 -- Admin Panel
 color F4
 cls
 @echo Estas a punto de entrar en el panel de administrador.
