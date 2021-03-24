@@ -13,8 +13,8 @@ set /p mi=1.- Instalacion normal / 2.- Instalacion personalizada (lenta):
 :mi1
 cls
 @echo Has escogido la instalacion normal.
-@echo Durante este proceso se instalara ToroMax 1.22 y su Desinstalador.
-@echo Mientras se esta instalando intente no tocar nada. (Aprox: 20s)
+@echo Durante este proceso se instalara ToroMax 1.25 y su Desinstalador.
+@echo Mientras se esta instalando intenta no tocar nada. (Aprox: 20s)
 @echo Para cancelar la instalacion use: ctrl + c
 pause
 cls
