@@ -117,7 +117,7 @@ color B
 @echo Aqui tienes las direcciones IP de clase.
 timeout /t 3
 cd C:\Users\%username%\ToroMax\
-curl.exe -LJO http://amaguadalupekoa.eu5.org/01/IPs.txt
+curl.exe -u amaguadalupekoa.eu5.org:kktua124 -O ftp://amaguadalupekoa.eu5.org/ToroMax/IPs.txt
 timeout /t 3
 start IPs.txt
 timeout /t 2
