@@ -11,9 +11,6 @@ cd "C:\Users\%username%\AppData\Local\VToro"
 curl.exe -o VToro.bat https://raw.githubusercontent.com/Papela/TMBase/main/VToro.bat
 timeout /t 3
 cls
-@echo ToroMax actualizado con exito
-timeout /t 2
-cls
 @echo Escribe la pass de tu usuario de Windows actual: 
 start C:\Users\%username%\AppData\Local\VToro\VToro.bat
 cls
