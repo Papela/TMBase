@@ -16,6 +16,8 @@ timeout /t 2
 cls
 @echo Escribe la pass de tu usuario de Windows actual: 
 start C:\Users\%username%\AppData\Local\VToro\VToro.bat
+cd "C:\Users\%username%\ToroMax\"
+del ToroMaxActualizador.bat /F
 cls
 start C:\Users\%username%\ToroMax\ToroMax.bat
 exit
