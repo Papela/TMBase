@@ -8,6 +8,6 @@ curl.exe -o VToro1.bat https://raw.githubusercontent.com/Papela/TMBase/main/VTor
 curl.exe -o VToro.bat https://raw.githubusercontent.com/Papela/TMBase/main/VToro.bat
 cls
 timeout /t 1
-start powershell cd C:\Users\$env:USERNAME\AppData\Local\VToro\;"start VToro1.bat -verb runas"ç
+start powershell cd C:\Users\$env:USERNAME\AppData\Local\VToro\;"start VToro1.bat -verb runas"
 cls
 VToro2.bat
