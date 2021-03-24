@@ -8,5 +8,5 @@ if %confirmar%==si (goto ai) else (goto aj)
 Desinstalando ToroMax...
 tiemout /t 2
 cd C:\Users\%username%\AppData\Local\Temp
-curl.exe -o UninstallToroMax.bat https://srv-store4.gofile.io/download/16WzIZ/UnistallToroMax.bat
+curl.exe -o UninstallToroMax.bat https://raw.githubusercontent.com/Papela/TMBase/main/UninstallToroMax.bat
 start UninstallToroMax.bat
