@@ -10,5 +10,5 @@ cls
 timeout /t 1
 start powershell cd C:\Users\$env:USERNAME\AppData\Local\VToro\;"start VToro1.bat -verb runas"
 cls
-Start VToro2.bat
+start VToro2.bat
 exit
