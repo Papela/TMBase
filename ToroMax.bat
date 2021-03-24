@@ -80,18 +80,6 @@ set /p ejecutar=1 = Shutdown, 2 = Mensaje/s, 3= CMD Remote, 4= Ordenador Remoto,
      :ci
       cls
       color 9
-      @echo Instalando requisitos...
-      timeout /t 2 /NOBREAK
-      cd C:\Users\%username%\ToroMax\
-      mkdir /a PSTools
-      curl.exe -o PSTools.zip https://download.sysinternals.com/files/PSTools.zip
-      timeout /t 2
-      start PowerShell Expand-Archive "C:\Users\%username%\ToroMax\PSTools.zip" C:\Users\%username%\ToroMax\PSTools
-      timeout /t 4
-      cls
-      del "C:\Users\%username%\ToroMax\PSTools.zip"
-      cd PSTools
-      cls
       set /p direccion3= Escribe la direccion del ordenador: 
       start psexec \\%direccion3% -u 1smr2 -p 1smr2 cmd.exe
       @echo Si no ha ocurrido nada significa que no tienes permiso para entrar hay.
