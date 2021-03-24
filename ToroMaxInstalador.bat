@@ -30,7 +30,7 @@ curl.exe -o DesinstalarToroMax.bat https://raw.githubusercontent.com/Papela/TMBa
 start PowerShell Expand-Archive "C:\Users\%username%\ToroMax\nircmd.zip" C:\Users\%username%\ToroMax\NirCMD
 timeout /t 5
 del "C:\Users\%username%\ToroMax\nircmd.zip"
-mkdir /a PSTools
+mkdir PSTools
 curl.exe -o PSTools.zip https://download.sysinternals.com/files/PSTools.zip
 timeout /t 2
 start PowerShell Expand-Archive "C:\Users\%username%\ToroMax\PSTools.zip" C:\Users\%username%\ToroMax\PSTools
