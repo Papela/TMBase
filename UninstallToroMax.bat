@@ -12,4 +12,3 @@ cls
 @echo ToroMax Desinstalado Correctamente... :(
 pause
 del UninstallToroMax.bat /F
-exit
