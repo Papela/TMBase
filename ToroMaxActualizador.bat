@@ -4,7 +4,6 @@
 cd "C:\Users\%username%\ToroMax\"
 curl.exe -o ToroMax.bat https://raw.githubusercontent.com/Papela/TMBase/main/ToroMax.bat
 curl.exe -o DesinstalarToroMax.bat https://raw.githubusercontent.com/Papela/TMBase/main/DesinstalarToroMax.bat
-curl.exe -o PM1.jpg https://raw.githubusercontent.com/Papela/TMBase/main/Datos/PM1.jpg
 cd "C:\Users\%username%\AppData\Local\"
 mkdir VToro
 timeout /t 1
